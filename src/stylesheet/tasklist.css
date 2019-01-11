@@ -82,7 +82,7 @@
         font-size:18px;
     }
     .checkbox01-parts::before{
-        top:-5px;
+        top:-3px;
     }
     .checkbox01-input:checked + .checkbox01-parts::after{
         top: -10px;
@@ -99,5 +99,8 @@
     }
     .delete-btn{
         font-size:12px;
+        padding:6px 10px;
+        right:3px;
+        bottom:6px;
     }
 }
