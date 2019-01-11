@@ -2,6 +2,7 @@
 .radio02{
     display:flex;
     justify-content: center;
+    margin: 28px 0 0 0;
 }
 
 .radio02-input{

@@ -1,5 +1,10 @@
 .tasklist{
     padding:10px 30px 30px 30px;
+    max-height:50vh;
+    overflow-y:scroll;
+}
+.tasklist::-webkit-scrollbar{
+    display:none;
 }
 
 .tasklist-item{
