@@ -16,7 +16,7 @@ class AddTodo extends Component {
   }
 
   taskAddClick(event){
-    if(this.state.inputText != ''){
+    if(this.state.inputText !== ''){
       const task = this.state.inputText;
       this.props.taskAdd(task);
       this.setState({

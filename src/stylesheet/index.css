@@ -6,6 +6,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:50vh;
+
+}
+
+#root{
+  background-color:#fff;
+  border-radius: 5px;
 }
 
 code {
