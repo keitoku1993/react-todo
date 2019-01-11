@@ -63,15 +63,11 @@ class App extends Component {
   }
 
   deleteTask(id){
-    console.log('aa');
-    console.log(id);
     let taskList = this.state.taskList;
     for(var i = 0; i < taskList.length; i++){
       if(taskList[i].id === id){
         const index = i;
-        console.log(index);
         taskList.splice(index,1);
-        console.log(taskList);
       }
     }
     this.setState({
