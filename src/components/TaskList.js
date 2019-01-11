@@ -33,6 +33,7 @@ class TaskList extends Component {
         <li className="tasklist-item" key={task.id}>
           <input name="checkbox01[]" className="checkbox01-input" type="checkbox" checked={task.completed} />
           <span className="checkbox01-parts" onClick={e => this.props.onChangeTasks(task.id)}>{task.label}</span>
+          <span className="delete-btn" onClick={e=>this.props.deleteTask(task.id)}>削除</span>
         </li>
       );
     })
