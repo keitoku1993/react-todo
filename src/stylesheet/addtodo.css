@@ -35,7 +35,8 @@
 @media screen and (max-width:600px){
     .addtodo-form{
         width:200px;
-        font-size:12px;
+        font-size: 16px;
+        transform: scale(0.8);
     }
     .addtodo-btn{
         font-size: 11px;
