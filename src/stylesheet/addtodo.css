@@ -37,6 +37,11 @@
         width:200px;
         font-size:12px;
     }
+    .addtodo-btn{
+        font-size: 12px;
+        width: 44px;
+        height: 24px;
+    }
     .addtodo-btn:hover{
         opacity:1;
     }
