@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import './stylesheet/tasklist.css';
+import '../stylesheet/tasklist.css';
+
 class TaskList extends Component {
   render() {
     const items = this.props.tasks;
@@ -30,13 +31,13 @@ class TaskList extends Component {
     const renderList = filteredItems.map((task) => {
       return(
         <li className="tasklist-item" key={task.id}>
-          <input type="checkbox" checked={task.completed} onChange={e => this.props.onChangeTasks(task.id)}/>
-          {task.label}
+          <input name="checkbox01[]" className="checkbox01-input" type="checkbox" checked={task.completed} />
+          <span className="checkbox01-parts" onClick={e => this.props.onChangeTasks(task.id)}>{task.label}</span>
         </li>
       );
     })
     return (
-      <ul className="tasklist">{renderList}</ul>
+      <ul className="tasklist checkbox01">{renderList}</ul>
     );
   }
 }

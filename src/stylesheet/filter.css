@@ -1,0 +1,40 @@
+/*css radio02*/
+.radio02{
+    display:flex;
+    justify-content: center;
+}
+
+.radio02-input{
+    display: none;
+  }
+  .radio02-input + label{
+    padding-left: 20px;
+    position:relative;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .radio02-input + label::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -6px;
+    left: -13px;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #999;
+    border-radius: 50%;
+  }
+  .radio02-input:checked + label{
+    color: #009a9a;
+  }
+  .radio02-input:checked + label::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -9px;
+    width: 20px;
+    height: 20px;
+    background: dodgerblue;
+    border-radius: 50%;
+  }

@@ -8,4 +8,43 @@
     padding: 8px 20px;
     font-size: 20px;
     border-radius: 6px;
+    background-color:#fff;
+}
+
+/* css checkbox01 */
+.checkbox01-input{
+  display: none;
+}
+.checkbox01-parts{
+  padding-left: 46px;
+  position:relative;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.checkbox01-parts::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+.checkbox01-input:checked + .checkbox01-parts{
+  color: #009a9a;
+}
+.checkbox01-input:checked + .checkbox01-parts::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    width: 12px;
+    height: 23px;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    border-bottom: 4px solid dodgerblue;
+    border-right: 4px solid dodgerblue;
 }

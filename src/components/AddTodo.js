@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import './stylesheet/addtodo.css';
+import '../stylesheet/addtodo.css';
+
 class AddTodo extends Component {
   constructor(props){
     super(props);

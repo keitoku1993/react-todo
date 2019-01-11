@@ -3,6 +3,7 @@ import Title from "./Title.js";
 import AddTodo from "./AddTodo";
 import TaskList from "./TaskList";
 import Filter from "./Filter";
+
 class App extends Component {
   constructor(){
     super();
