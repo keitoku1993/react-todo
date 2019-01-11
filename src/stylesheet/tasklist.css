@@ -1,0 +1,11 @@
+.tasklist{
+    padding:10px 30px 30px 30px;
+}
+
+.tasklist-item{
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 8px 20px;
+    font-size: 20px;
+    border-radius: 6px;
+}

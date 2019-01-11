@@ -44,7 +44,6 @@ class Filter extends Component {
   render() {
     return (
       <div>
-        <p>フィルター</p>
         <input type="radio" value='0' checked={this.state.allIsChecked} onChange={e=>this.handleRadioClick(e.target.value)}/>すべて
         <input type="radio" value='1' checked={this.state.unCompletedIsChecked} onChange={e=>this.handleRadioClick(e.target.value)}/>未完了
         <input type="radio" value='2' checked={this.state.completedIsChecked} onChange={e=>this.handleRadioClick(e.target.value)}/>完了

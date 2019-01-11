@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import './stylesheet/addtodo.css';
 class AddTodo extends Component {
   constructor(props){
     super(props);
@@ -28,9 +29,9 @@ class AddTodo extends Component {
 
   render() {
     return (
-      <div>
-        <input type="text" onChange={e=>this.handleTextChange(e)} value={this.state.inputText} placeholder="タスクを入力してね" />
-        <button onClick={e=>this.taskAddClick(e)}>追加</button>
+      <div className="addtodo-wrapper">
+        <input className="addtodo-form" type="text" onChange={e=>this.handleTextChange(e)} value={this.state.inputText} placeholder="タスクを入力してね" />
+        <button className="addtodo-btn" onClick={e=>this.taskAddClick(e)}>追加</button>
       </div>
     );
   }
